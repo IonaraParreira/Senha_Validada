@@ -1,0 +1,1 @@
+Este é um projeto simples em Python inspirado em conceitos de CyberSegurança e desenvolvimento seguro. O programa utiliza Expressões Regulares (Regex) para validar se uma senha possui o tamanho mínimo exigido e aplica uma lógica de mascaramento de caracteres para proteger a privacidade dos dados digitados.
