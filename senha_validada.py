@@ -1,26 +1,24 @@
 import re
 
-print("--- SISTEMA DE SEGURANÇA: CADASTRO DE CREDENCIAIS ---")
+print("\n--- SISTEMA DE SEGURANÇA: CADASTRO DE CREDENCIAIS ---\n")
 
-# 1. Recebe a senha que o usuário digitou
-senha = input("Digite uma senha para cadastro (mínimo 6 caracteres): ")
+# 1. Recebe a senha do usuário
+senha = input("A senha tem que ter (mínimo 6 caracteres, com número e caractere especial): ")
 
-# 2. Define a regra de segurança (Regex):
-# ^ indica o início da senha
-# . significa que aceita qualquer caractere (letras, números ou símbolos)
-# {6,} exige que a senha tenha no mínimo 6 caracteres
-# $ indica o fim da senha
-padrao_seguro = r"^.{6,}$"
+# 2. A nova Regex explicada por partes:
+# (?=.*\d)      -> SENSOR 1: Obriga a ter pelo menos um NÚMERO
+# (?=.*[@$!%*?&]) -> SENSOR 2: Obriga a ter pelo menos um CARACTERE ESPECIAL
+# .{6,}         -> REGRA 3: Mantém a exigência de ter no mínimo 6 caracteres no total
+padrao_seguro = r"^(?=.*\d)(?=.*[@$!%*?&]).{6,}$"
 
-# 3. Verifica se a senha cumpre a regra do padrão seguro
+# 3. Faz a validação
 if re.fullmatch(padrao_seguro, senha):
-    print("\n[SUCESSO] Senha validada com sucesso!")
+    print("\n 🟢 Senha validada com sucesso!")
     
-    # 4. Mecanismo de Mascaramento:
-    # Conta o tamanho da senha e substitui as letras por "*" para proteger a tela
+    # 4. Mantém o mascaramento que você gostou
     senha_escondida = "*" * len(senha)
     print(f"Sua senha foi mascarada para segurança: {senha_escondida}")
 
 else:
-    print("\n[ERRO] Senha inválida!")
-    print("Atenção: A senha precisa ter pelo menos 6 caracteres para ser segura.")
+    print("\n 🔴 Senha fraca!")
+    print("Atenção: A senha deve ter pelo menos 6 caracteres, conter no mínimo 1 número e 1 caractere especial (ex: @, $, !, %, *, ?, &).")
