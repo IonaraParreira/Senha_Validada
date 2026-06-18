@@ -3,7 +3,7 @@
 Este é um projeto em Python focado em **CyberSegurança** e práticas de **Desenvolvimento Seguro (Secure Coding)**. 
 
 O programa utiliza Expressões Regulares (Regex) avançadas para criar uma validação multicritério, exigindo obrigatoriamente que a senha criada possua:
-* No mínimo 6 caracteres;
+* No mínimo 8 caracteres;
 * Pelo menos 1 caractere numérico;
 * Pelo menos 1 caractere especial (como @, $, !, %, *, ?, &).
 
