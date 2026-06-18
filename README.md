@@ -13,8 +13,6 @@ Além disso, o sistema conta com uma lógica de **Mascaramento de Dados**, subst
 
 <h1>O Resultado</h1>
 
-<img width="1230" height="133" alt="Captura de tela 2026-06-08 161516" src="https://github.com/user-attachments/assets/e36c8565-cbf5-4514-bf7c-72c09a4dd70a" />
+<img width="886" height="207" alt="Captura de tela 2026-06-18 184608" src="https://github.com/user-attachments/assets/e271298f-445a-442d-a5bf-06bb08aa4cda" />
 
-<br>
-<img width="880" height="115" alt="Captura de tela 2026-06-08 161455" src="https://github.com/user-attachments/assets/6615bb80-ed06-4de2-a52b-b8e6da526bb1" />
 
