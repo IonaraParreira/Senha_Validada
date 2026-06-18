@@ -11,7 +11,7 @@ senha = input("A senha tem que ter (mínimo 8 caracteres, incluindo: maiúscula,
 # (?=.*[@$!%*?&]) -> SENSOR 2: Obriga a ter pelo menos um CARACTERE ESPECIAL
 # (?=.*[A-Z])   -> SENSOR 3: Obriga a ter pelo menos uma letra MAIÚSCULA
 # (?=.*[a-z])   -> SENSOR 4: Obriga a ter pelo menos uma letra MINÚSCULA
-# .{8,}         -> REGRA 5: Mantém a exigência de ter no mínimo 6 caracteres no total
+# .{8,}         -> REGRA 5: Mantém a exigência de ter no mínimo 8 caracteres no total
 # $             -> Fim da string
 padrao_seguro = r"^(?=.*\d)(?=.*[@$!%*?&])(?=.*[A-Z])(?=.*[a-z]).{8,}$"
 
